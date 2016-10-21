@@ -1,0 +1,110 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+$gray-base =              #000;
+$gray-darker =            #444;
+$gray-dark =              #888;
+$gray =                   #ccc;
+$gray-light =             #eee;
+$gray-lighter =           #f6f6f6;
+
+$brand-primary =         #ff3a8d;
+$brand-secondary =       #EEFF38;
+
+$brand-success =         #00BD6E;
+$brand-info =            #388BFF;
+$brand-warning =         #FFAC38;
+$brand-danger =          #FF4938;
+
+$tab-focus-color =       $brand-primary;
+
+
+//** Social Media Colors
+$social-facebook =       #3b5998;
+$social-twitter =        #4099ff;
+$social-pinterest =      #c92228;
+$social-linkedin =       #007bb6;
+
+
+//== Scaffolding
+//
+//## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+$body-bg =               #fff;
+//** Global text color on `<body>`.
+$text-color =            $gray-base;
+
+//** Global textual link color.
+$link-color =            $brand-primary;
+//** Link hover color set via `darken()` function.
+$link-hover-color =      darken($link-color, 15%);
+
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+$sourcesans-font-path =    '../fonts/';
+
+$font-family-backups =     Helvetica, Arial, sans-serif;
+// $font-family-black =       "Source Sans Pro Black", $font-family-backups;
+$font-family-bold =        "Source Sans Pro Bold", $font-family-backups;
+$font-family-medium =      "Source Sans Pro Medium", $font-family-backups;
+$font-family-regular =     "Source Sans Pro", $font-family-backups;
+$font-family-light =       "Source Sans Light", $font-family-backups;
+$font-family-sans-serif =  $font-family-light, $font-family-backups;
+
+$font-weight-black =       800;
+$font-weight-bold =        600;
+$font-weight-medium =      500;
+$font-weight-light =       300;
+$font-weight-standard =    400;
+
+$font-family-serif =       Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+$font-family-monospace =   Menlo, Monaco, Consolas, "Courier New", monospace;
+$font-family-base =        $font-family-sans-serif;
+
+$font-base =               16;
+$font-size-base =          1em;
+$font-size-large =         unit((18 / $font-base), em); // ~18px
+$font-size-small =         unit((12 / $font-base), em); // ~12px
+
+$font-size-h1 =            unit((36 / $font-base), em); // ~36px
+$font-size-h2 =            unit((30 / $font-base), em); // ~30px
+$font-size-h3 =            unit((24 / $font-base), em); // ~24px
+$font-size-h4 =            unit((18 / $font-base), em); // ~18px
+$font-size-h5 =            $font-size-base;
+$font-size-h6 =            unit((12 / $font-base), em); // ~12px
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+$screen-xs =                  320px;
+$screen-xs-min =              $screen-xs;
+
+// Small screen / tablet/large phone
+$screen-sm =                  321px;
+$screen-sm-min =              $screen-sm;
+
+// Medium screen / desktop/iPad
+$screen-md =                  768px;
+$screen-md-min =              $screen-md;
+
+// Large screen / desktop
+$screen-lg =                  1024px;
+$screen-lg-min =              $screen-lg;
+
+// So media queries don't overlap when required, provide a maximum
+$screen-xs-max =              ($screen-sm-min - 1);
+$screen-sm-max =              ($screen-md-min - 1);
+$screen-md-max =              ($screen-lg-min - 1);
+$screen-lg-max =              1200px;

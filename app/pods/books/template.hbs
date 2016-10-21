@@ -1,0 +1,32 @@
+<h1>Books</h1>
+
+<table class="books table table-hover">
+  <thead class="books-labels">
+    <tr>
+      <th>Title:</th>
+      <th>Author:</th>
+      <th>Category:</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    {{#each books as |book|}}
+      <tr class="book clickable" {{action 'goToBook' book.id}}>
+        <td>
+          {{book.title}}
+          ({{book.chapterCount}})
+        </td>
+        <td>
+          {{#each book.author as |author|}}
+            {{author.name}}
+          {{/each}}
+        </td>
+        <td>
+          {{#each book.category as |category|}}
+            {{category.name}}
+          {{/each}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>
